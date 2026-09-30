@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "OWM-Dataset",
-  "description": "This dataset contains processed intracranial EEG (iEEG) recordings from frontal (LMFG, RMFG) and temporal (LMTG, RMTG) brain regions of 13 epilepsy patients performing a load-3 object working memory task. Data were collected to investigate neural mechanisms underlying working memory maintenance using intracranial electrophysiology. The dataset includes trial-level recordings after artifact rejection, along with behavioral performance data indicating task accuracy.",
-  "methods_description": "Each trial lasted 6498 ms, consisting of 1000 ms fixation, 1500 ms encoding, and 3998 ms delay periods. Trials for each channel were concatenated into a single one-dimensional array and padded with zeros to ensure equal length across channels for .edf format compliance. Artifact rejection was performed at the single-trial level, resulting in unmatched trial indices across channels, with trial matching information provided in the sourcedata folder.",
+  "description": "This dataset contains processed intracranial EEG recordings from frontal (middle frontal gyrus) and temporal (middle temporal gyrus) areas of 13 epilepsy patients performing a load-3 object working memory task. Trials are 6498 ms long (fixation, encoding, and delay periods) and include only those retained after artifact rejection. Per-subject trial indexes and behavioral performance tables are provided as source data.",
+  "methods_description": "Intracranial EEG was recorded from epilepsy patients during an object working memory task with 1000 ms fixation, 1500 ms encoding, and 3998 ms delay. Data were preprocessed with artifact rejection, and trials per channel were concatenated and zero-padded into EDF format.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -42,17 +42,10 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "Prefrontal Cortex",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D017397"
+      "term": "frontotemporal bursting"
     },
     {
-      "term": "Temporal Lobe",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013702"
-    },
-    {
-      "term": "electrophysiology"
+      "term": "local field potential"
     }
   ],
   "related_identifiers": [
@@ -69,7 +62,7 @@
     {
       "identifier": "10.1016/j.neuroimage.2026.121718",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "10.18112/openneuro.ds006136.v1.0.1",
@@ -83,10 +76,6 @@
     },
     {
       "funder_name": "NINDS",
-      "award_title": "Neurosurgery Career Development Award (K12)"
-    },
-    {
-      "funder_name": "NIH/NINDS",
       "award_number": "K23 NS114178"
     },
     {
@@ -103,7 +92,7 @@
     "ieeg"
   ],
   "sizes": [
-    "299.8 MB (16 files)"
+    "286 MB (16 files)"
   ],
   "formats": [
     ".edf",
