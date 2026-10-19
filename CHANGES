@@ -1,4 +1,5 @@
 Unreleased 2026-10-18
+  - 2026-10-19 electrode locations (A3, Lane G round 4): sub-MU3 electrodes.tsv -999 sentinel -> n/a (1 files). README: section 'Electrode locations (19 Oct 2026)'.
   - channels.tsv of 14 recordings = the data-file header channel list (name, order, count; matched by name): 143 rows renamed to the header name, 0 rows added, 0 rows removed (kept in sourcedata/channels-removed-2026-10-18/), 0 files reordered. mne_bids read_raw_bids raised 'Channel mismatch'.
   - README: section 'Channel names follow the data headers'.
 
