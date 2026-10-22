@@ -32,6 +32,6 @@ The data headers of this dataset name the channels by contact number only (e.g. 
 
 ## Electrode locations (19 Oct 2026)
 
-Sub-MU3 electrodes.tsv -999 sentinel -> n/a (proposal A3, Lane G round 4). Evidence: One row of sub-MU3_electrodes.tsv used -999 as a missing-value sentinel in x/y/z, which MNE read as -999 mm; it is now n/a. No other value changed.
+Sub-MU3 electrodes.tsv -999 sentinel -> n/a. Evidence: One row of sub-MU3_electrodes.tsv used -999 as a missing-value sentinel in x/y/z, which MNE read as -999 mm; it is now n/a. No other value changed.
 
-Full evidence per dataset: REPORT-ieeg-locations.md and ieeg_locations.json (Lane G, 19 Oct 2026). This dataset mirrors OpenNeuro; the same change belongs upstream. Local branch only.
+This dataset mirrors OpenNeuro; the same change belongs upstream.
